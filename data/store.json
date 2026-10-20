@@ -1,0 +1,201 @@
+{
+  "products": [
+    {
+      "id": "phone",
+      "name": "Samsung Galaxy A55",
+      "category": "Phones",
+      "condition": "New",
+      "description": "A bright 6.6-inch display, a capable camera, and a battery that keeps up with your day.",
+      "delivery": "Free delivery in Addis Ababa. Other cities: ETB 350.",
+      "image": "https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1000&q=85",
+      "imageAlt": "A smartphone resting on a warm-colored background",
+      "color": "peach"
+    },
+    {
+      "id": "computer",
+      "name": "Lenovo IdeaPad Slim 3",
+      "category": "Computers",
+      "condition": "New",
+      "description": "A practical everyday laptop with a comfortable keyboard and room for work, study, and a little fun.",
+      "delivery": "Free delivery in Addis Ababa. Other cities: ETB 500.",
+      "image": "https://images.unsplash.com/photo-1496181133206-80ce9b88a853?auto=format&fit=crop&w=1000&q=85",
+      "imageAlt": "An open laptop on a desk",
+      "color": "blue"
+    },
+    {
+      "id": "fridge",
+      "name": "Midea 260L Refrigerator",
+      "category": "Home",
+      "condition": "New",
+      "description": "A roomy, energy-conscious refrigerator with adjustable shelves and a separate freezer.",
+      "delivery": "Free delivery in Addis Ababa. Other cities: ETB 900.",
+      "image": "https://images.unsplash.com/photo-1571175443880-49e1d25b2bc5?auto=format&fit=crop&w=1000&q=85",
+      "imageAlt": "A clean, modern refrigerator in a bright kitchen",
+      "color": "mint"
+    },
+    {
+      "id": "stove",
+      "name": "Roch 4-Burner Gas Stove",
+      "category": "Home",
+      "condition": "New",
+      "description": "Four burners and a full-size oven make everyday meals and family gatherings easy.",
+      "delivery": "Free delivery in Addis Ababa. Other cities: ETB 700.",
+      "image": "https://images.unsplash.com/photo-1556911220-e15b29be8c8f?auto=format&fit=crop&w=1000&q=85",
+      "imageAlt": "A modern stove in a welcoming home kitchen",
+      "color": "lavender"
+    }
+  ],
+  "auctions": [
+    {
+      "id": "auction-phone",
+      "productId": "phone",
+      "entryFee": 45,
+      "closesAt": "2026-10-22T06:25:16.686Z",
+      "status": "open",
+      "noUniqueRule": "earliest-lowest",
+      "createdAt": "2026-10-20T06:25:16.686Z",
+      "result": null
+    },
+    {
+      "id": "auction-computer",
+      "productId": "computer",
+      "entryFee": 65,
+      "closesAt": "2026-10-23T06:25:16.686Z",
+      "status": "open",
+      "noUniqueRule": "earliest-lowest",
+      "createdAt": "2026-10-20T06:25:16.686Z",
+      "result": null
+    },
+    {
+      "id": "auction-fridge",
+      "productId": "fridge",
+      "entryFee": 85,
+      "closesAt": "2026-10-24T06:25:16.686Z",
+      "status": "open",
+      "noUniqueRule": "earliest-lowest",
+      "createdAt": "2026-10-20T06:25:16.686Z",
+      "result": null
+    },
+    {
+      "id": "auction-stove",
+      "productId": "stove",
+      "entryFee": 35,
+      "closesAt": "2026-10-25T06:25:16.686Z",
+      "status": "open",
+      "noUniqueRule": "earliest-lowest",
+      "createdAt": "2026-10-20T06:25:16.686Z",
+      "result": null
+    }
+  ],
+  "users": [
+    {
+      "id": "123c2e47-a2cd-4a11-8b4b-a5addec29033",
+      "phone": "+251912846151",
+      "role": "admin",
+      "firstName": "Demo admin",
+      "createdAt": "2026-10-20T06:25:44.827Z",
+      "passwordSalt": "6eaf38072a0348ce1f765574e3c998ef",
+      "passwordHash": "7f33de7998270b41143374bd99458a6f220cef929bf5ec3ec333b5e6a8c603d4d92d26aeb7315cbb3190373a787bf14528752ce5a88bcf6a867c702fe486d196"
+    },
+    {
+      "id": "e3707c48-c0b4-4320-ab67-e1df4e8a6fa4",
+      "phone": "+251912846151",
+      "role": "user",
+      "firstName": "Bidder 6151",
+      "createdAt": "2026-10-20T06:32:12.574Z"
+    },
+    {
+      "id": "128b0ea5-7e62-448a-b294-4699bc11b5ce",
+      "phone": "+251910728200",
+      "role": "user",
+      "firstName": "Bidder 8200",
+      "createdAt": "2026-10-20T08:56:24.850Z",
+      "passwordSalt": "7609e4c0e8d99da02387f4ef6a40b6bb",
+      "passwordHash": "08192c5f011af8a7cc258d8cdf48373f90bcddb7ef02bd0c2220e147acaa27dc8c3e1680894c7874c5a4c7591129f5a50e9905078f34deaf4ab7322d10e3e6c8"
+    }
+  ],
+  "bids": [
+    {
+      "id": "800c72bd-4da3-428d-89ed-668f7d2d016c",
+      "auctionId": "auction-phone",
+      "userId": "e3707c48-c0b4-4320-ab67-e1df4e8a6fa4",
+      "amount": 12,
+      "entryFee": 45,
+      "createdAt": "2026-10-20T06:32:48.066Z",
+      "paymentId": "7787945c-d10e-4a2c-b40c-2e4c4be6a8d9"
+    }
+  ],
+  "payments": [
+    {
+      "id": "7787945c-d10e-4a2c-b40c-2e4c4be6a8d9",
+      "bidId": "800c72bd-4da3-428d-89ed-668f7d2d016c",
+      "provider": "demo",
+      "status": "simulated",
+      "amount": 45,
+      "currency": "ETB"
+    }
+  ],
+  "auditLog": [
+    {
+      "id": "8e30def1-c4e5-4a67-ba13-f0db4c168b5c",
+      "type": "user-created",
+      "at": "2026-10-20T06:25:44.827Z",
+      "details": {
+        "userId": "123c2e47-a2cd-4a11-8b4b-a5addec29033",
+        "phone": "+251912846151"
+      },
+      "previousHash": "GENESIS",
+      "hash": "b7f4c3fd8d2eb05370da865c33f77c66ad4a5bde3561d92193eacf430aa6abb2"
+    },
+    {
+      "id": "78d16898-86a8-4217-b307-a4ea2eb8691e",
+      "type": "user-created",
+      "at": "2026-10-20T06:32:12.575Z",
+      "details": {
+        "userId": "e3707c48-c0b4-4320-ab67-e1df4e8a6fa4",
+        "phone": "+251912846151"
+      },
+      "previousHash": "b7f4c3fd8d2eb05370da865c33f77c66ad4a5bde3561d92193eacf430aa6abb2",
+      "hash": "b05a1bea161453706b54dc84841f38aa8af5979dcb00ef95e53a94468184a1f6"
+    },
+    {
+      "id": "9eaa0b1e-6483-48f1-a19a-70cfb28a95e1",
+      "type": "bid-submitted",
+      "at": "2026-10-20T06:32:48.067Z",
+      "details": {
+        "bidId": "800c72bd-4da3-428d-89ed-668f7d2d016c",
+        "auctionId": "auction-phone",
+        "userId": "e3707c48-c0b4-4320-ab67-e1df4e8a6fa4",
+        "amount": 12,
+        "entryFee": 45,
+        "paymentStatus": "simulated"
+      },
+      "previousHash": "b05a1bea161453706b54dc84841f38aa8af5979dcb00ef95e53a94468184a1f6",
+      "hash": "adec3dad0ff312b3997aba1e89b0188e637b3c793d875a72f361d2ae1af3bf89"
+    },
+    {
+      "id": "aef92486-b69d-441c-8a81-9f8931c89c9c",
+      "type": "user-created",
+      "at": "2026-10-20T08:56:24.850Z",
+      "details": {
+        "userId": "128b0ea5-7e62-448a-b294-4699bc11b5ce",
+        "phone": "+251910728200"
+      },
+      "previousHash": "adec3dad0ff312b3997aba1e89b0188e637b3c793d875a72f361d2ae1af3bf89",
+      "hash": "280c1cca5a6f8fdd6f8c848fff60e80854ca99ae9566aefa56f556387a5858f6"
+    },
+    {
+      "id": "e84bbe2e-ed9d-487c-81eb-d4398e5de884",
+      "type": "password-created",
+      "at": "2026-10-20T08:57:41.243Z",
+      "details": {
+        "userId": "123c2e47-a2cd-4a11-8b4b-a5addec29033"
+      },
+      "previousHash": "280c1cca5a6f8fdd6f8c848fff60e80854ca99ae9566aefa56f556387a5858f6",
+      "hash": "c226ed9d8a0de3964c02cf03042c63098195b74f5f0bb5481d657f28858a04ae"
+    }
+  ],
+  "policy": "If no bid amount is unique, the earliest submitted bid at the lowest bid amount wins.",
+  "fallbackRule": "earliest-lowest",
+  "recentWinners": []
+}

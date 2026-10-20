@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f7f5ef">
+    <meta name="description" content="A friendlier way to bid on the things you love. Discover fair, private lowest-unique-bid auctions across Ethiopia.">
+    <title>Lifebid — good things find their people</title>
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#" aria-label="lifebid home">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 42 42" fill="none"><path d="M21 3.5 38.5 14v14L21 38.5 3.5 28V14L21 3.5Z" fill="#ECA85F"/><path d="M12 23.3c3.2-1.7 5.9-1.8 8.4-.1 2.5 1.7 5.3 1.7 9.6-.2M14.5 17.5h.1m12.8 0h.1" stroke="#fffdf8" stroke-width="2.8" stroke-linecap="round"/><path d="m21 10.5 2.1 4.2 4.7.7-3.4 3.3.8 4.6-4.2-2.2-4.2 2.2.8-4.6-3.4-3.3 4.7-.7 2.1-4.2Z" fill="#fffdf8"/></svg></span>
+        <span class="brand-name">lifebid<span>.</span><small>GOOD THINGS FIND THEIR PEOPLE</small></span>
+      </a>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#auctions">Auctions</a><a href="#how-it-works">How it works</a><a href="#winners">Happy winners</a>
+      </nav>
+      <div class="header-actions"><button class="text-button account-link" id="dashboard-button" hidden>My lifebid</button><button class="text-button" id="signin-button">Sign in</button><button class="button button-dark header-signin" id="signup-button">Sign up <span aria-hidden="true">↗</span></button><button class="mobile-menu" aria-label="Open menu" id="mobile-menu">☰</button></div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="eyebrow"><span class="sparkle">✳</span> A little joy, a little strategy</div>
+          <h1>Good things<br>find their <span>people.</span></h1>
+          <p class="hero-copy">Bid on lovely things for less. Pick a private amount, and the lowest one-of-a-kind bid wins.</p>
+          <div class="hero-actions"><a class="button button-primary" href="#auctions">Explore auctions <span aria-hidden="true">↘</span></a><span class="hero-note"><span class="avatar-stack"><i>H</i><i>D</i><i>L</i></span> A growing community across Ethiopia</span></div>
+          <div class="hero-trust"><span>✳ Fair and simple</span><span>◉ Your bid stays private</span><span>♡ Made for Ethiopia</span></div>
+        </div>
+        <div class="hero-art" aria-label="Featured auction: a beautiful smartphone">
+          <div class="sun-shape"></div><div class="hero-scribble">Your next<br>good thing <span>↙</span></div>
+          <img src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1100&q=90" alt="A sleek smartphone, this week's featured auction">
+          <div class="hero-sticker"><span>♥</span><br>one happy<br>little bid</div>
+          <div class="hero-product-label"><span>THIS WEEK'S LITTLE GEM</span><strong>Samsung Galaxy A55</strong><small>Entry fee <b>ETB 45</b></small></div>
+          <div class="floating-star">✳</div><div class="floating-pill"><span class="live-dot"></span> Open for bids</div>
+        </div>
+        <div class="hero-bottom"><span>01 / A BETTER WAY TO BID</span><span class="hero-bottom-line"></span><span>Scroll to find your thing ↓</span></div>
+      </section>
+
+      <section class="how-strip" id="how-it-works">
+        <div><span class="step-number">01</span><div><strong>Choose a good thing</strong><p>Find an item you’d love to take home.</p></div></div>
+        <div><span class="step-number">02</span><div><strong>Pick your private bid</strong><p>Pay the entry fee. Your bid stays yours.</p></div></div>
+        <div><span class="step-number">03</span><div><strong>Lowest unique wins</strong><p>One-of-a-kind low bid? It could be yours.</p></div></div>
+      </section>
+
+      <section class="auction-section section-shell" id="auctions">
+        <div class="section-heading">
+          <div><div class="eyebrow"><span class="sparkle">✳</span> THE GOOD STUFF</div><h2>Find your next <span>favourite.</span></h2><p class="section-subtitle">Real items. Clear rules. A little bit of fun.</p></div>
+          <a class="underlined-link" href="#auctions">See all auctions <span>↗</span></a>
+        </div>
+        <div class="filter-row" role="group" aria-label="Filter auctions by category" id="category-filters">
+          <button class="filter-chip active" data-category="All">Everything <span class="filter-count" id="count-all">4</span></button><button class="filter-chip" data-category="Phones">Phones</button><button class="filter-chip" data-category="Computers">Computers</button><button class="filter-chip" data-category="Home">Home & living</button>
+          <span class="sort-label"><span class="live-dot"></span> OPEN NOW <span>·</span> <span id="auction-count">4 auctions</span></span>
+        </div>
+        <div class="auction-grid" id="auction-grid" aria-live="polite"><div class="loading-state">Finding the good stuff...</div></div>
+      </section>
+
+      <section class="quiet-banner"><span class="banner-star">✳</span><div><div class="eyebrow">NO SURPRISES, EVER</div><h2>Good bids.<br><span>Clear rules.</span></h2><p>You’ll see the entry fee, closing time, condition and delivery details before you bid. No hidden bits, no pressure.</p><a class="button button-light" href="#how-it-works">Get to know us <span>↗</span></a></div><div class="banner-doodle" aria-hidden="true"><span>✳</span><i>♡</i><b>↗</b><em>good</em></div></section>
+
+      <section class="winner-section section-shell" id="winners">
+        <div class="section-heading winner-heading"><div><div class="eyebrow"><span class="sparkle">✳</span> LITTLE WINS, BIG SMILES</div><h2>Recently <span>re-homed.</span></h2><p class="section-subtitle">A few happy endings from our community.</p></div><span class="verified-note"><span>✓</span> Verified wins</span></div>
+        <div class="winner-grid" id="winner-grid"></div>
+      </section>
+
+      <section class="cta-section"><div class="cta-decoration">✳</div><div class="eyebrow">YOUR NEXT CHAPTER STARTS HERE</div><h2>Something good<br>is <span>waiting.</span></h2><p>Have a look around. Your favourite thing might be one little bid away.</p><a class="button button-dark" href="#auctions">Find your thing <span>↗</span></a><small>Free to browse · Clear fees · Happy bidding</small></section>
+    </main>
+
+    <footer class="site-footer"><a class="brand footer-brand" href="#"><span class="brand-mark"><svg viewBox="0 0 42 42" fill="none"><path d="M21 3.5 38.5 14v14L21 38.5 3.5 28V14L21 3.5Z" fill="#ECA85F"/><path d="M12 23.3c3.2-1.7 5.9-1.8 8.4-.1 2.5 1.7 5.3 1.7 9.6-.2" stroke="#fffdf8" stroke-width="2.8" stroke-linecap="round"/></svg></span><span class="brand-name">lifebid<span>.</span><small>GOOD THINGS FIND THEIR PEOPLE</small></span></a><p>A friendlier way to find your next favourite. Made with care in Ethiopia. <span>♥</span></p><div class="footer-bottom"><span>© 2026 lifebid · Preview experience</span><span>Bids and payments are simulated. No real charges are made.</span></div></footer>
+
+    <div class="modal-backdrop" id="modal-backdrop" hidden><section class="modal-card" id="modal-card" role="dialog" aria-modal="true" aria-labelledby="modal-title"></section></div>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>

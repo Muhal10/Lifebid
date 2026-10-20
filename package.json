@@ -1,0 +1,13 @@
+{
+  "name": "lifebid-ethiopia",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A friendly lowest-unique-bid auction demo for Ethiopia",
+  "scripts": {
+    "start": "node server.js",
+    "test": "node --test"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
