@@ -51,3 +51,21 @@ This is a prototype, not a payment-ready or production identity system. Before t
 - A reviewed fallback rule for auctions with no unique bid. The admin can publish one of two clear demo rules before future bids are placed.
 
 Demo winners appear only after an actual demo auction closes. The seeded page starts with an empty verified-winner list rather than invented results.
+
+
+
+
+
+
+
+"
+Before opening Lifebid to real users, these items still need attention:
+
+Phone verification: Configure and test Africa’s Talking with a replacement API key. A key was previously shared in chat, so revoke it if you haven’t already. Preview mode displays OTP codes on screen and isn’t safe for public use.
+Real payments: Add and test a payment provider, including duplicate-payment protection, refunds, and reconciliation. Payments are currently simulated.
+Production data and sign-in: Replace the local JSON store and in-memory sessions with durable, protected production storage. 
+ The 5-character password minimum you requested is okay for the preview, but should be increased before launch.
+Launch operations: Finalize the published tie-break and refund policies, delivery process, item checks, and applicable business/legal requirements.
+Photo backups: Uploaded item pictures are saved in data/uploads; back up that folder along with data/store.json.
+
+"
